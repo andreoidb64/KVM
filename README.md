@@ -1,2 +1,2 @@
 # KVM
-Setup Ubuntu KVM Hypervisor with remote console
+Setup Ubuntu KVM hypervisor with remote console
