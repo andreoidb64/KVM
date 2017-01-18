@@ -1,0 +1,24 @@
+#!/bin/bash
+################################################################################
+# file: /usr/local/bin/TurnoffLaptopScreen
+# auth: andreoidb64
+# date: 20170116
+#
+# Description:
+# Turn off laptop screen.
+# Add "xterm -e /usr/local/bin/TurnoffLaptopScreen" to your ~/.profile if you
+# want to use only one external monitor on your laptop.
+#
+################################################################################
+
+# See output of below command:
+xrandr
+# And set proper display name here:
+MyDisplay="LVDS-1"
+
+echo -e "\n\n\n"
+echo "$0:"
+echo -e "\n ... TURN OFF LAPTOP MONITOR ..."
+read -p "        Hit any kay to abort" -t 3 DUMMY || xrandr --output $MyDisplay --off
+
+exit 0
