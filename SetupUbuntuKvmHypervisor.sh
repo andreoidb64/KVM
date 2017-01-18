@@ -28,4 +28,8 @@
 	# Add current user to libvirt group
 	sleep 2
 	sudo adduser $USER libvirtd
+	#
+	# Start gtk-greeter
+	sleep 2
+	sudo init 5
 } |tee $0.log
