@@ -24,6 +24,9 @@
 	# Install virt-manager
 	sleep 2
 	sudo apt install virt-manager
+	# Install libguestfs utilities http://libguestfs.org/
+	sleep 2
+	sudo apt install libguestfs-tools
 	#
 	# Add current user to libvirt group
 	sleep 2
