@@ -19,6 +19,6 @@ MyDisplay="LVDS-1"
 echo -e "\n\n\n"
 echo "$0:"
 echo -e "\n ... TURN OFF LAPTOP MONITOR ..."
-read -p "        Hit any kay to abort" -t 3 DUMMY || xrandr --output $MyDisplay --off
+read -p "        Hit any key to abort" -t 3 DUMMY || xrandr --output $MyDisplay --off
 
 exit 0
